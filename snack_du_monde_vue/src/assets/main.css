@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.body{
+    font-family: "inter", sans-serif;
+    
+}
+/* Custom CSS for overlay */
+ .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(229, 221, 144, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 80%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: inter;
+    color: #45b046;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: darkgreen;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    font-size:3em;
+}
+.custom-navbar {
+    padding: 20px 10px;
+    background-color: #e5dd90; 
+    border-bottom: 3px solid #45b046;
+}
+.custom-nav-link {
+    color: #45b046;
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+.custom-nav-link:hover {
+    color:darkgreen; 
+}
+.navbar-brand img {
+    height: 60px; 
+}
+.navbar-toggler {
+    border-color: transparent;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2869, 176, 70, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.carousel-item {
+    padding: 20px;
+}
+.carousel-item .review {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+.carousel-item .customer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.g-signin2 {
+    width: 100% !important; 
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.g-signin2 div {
+    width: auto !important; 
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 50px !important; 
+    font-size: 18px !important; 
+}
+
+.g-signin2 .abcRioButtonContentWrapper {
+    padding: 0 !important; 
+}
+
+
+/* Larger size for desktop */
+@media (min-width: 768px) {
+    #gift-basket img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Smaller size for mobile */
+@media (max-width: 576px) {
+    #gift-basket img {
+        width: 70%;
+        max-width: 200px;
+    }
+}
+/* Larger size for desktop */
+@media (min-width: 768px) {
+    #gift-basket img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Smaller size for mobile */
+@media (max-width: 576px) {
+    #gift-basket img {
+        width: 70%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 35px; /* Smaller logo height for extra small screens */
+    }
+}
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px; /* Slightly larger logo height for small screens */
+    }
+}
+ /* Hide regular nav links on small screens */
+ @media (max-width: 991px) {
+    .navbar-nav {
+        display: none;
+    }
+    .cart-icon {
+        display: block;
+    }
+    .nav-link-cart {
+        display: none;
+    }
+}
+/* Show overlay toggler and cart icon on small screens */
+@media (max-width: 991px) {
+    .overlay-toggle {
+        display: block;
+    }
+    .cart-icon {
+        display: block;
+    }
+}
+/* Hide overlay toggler and cart icon on large screens */
+@media (min-width: 992px) {
+    .overlay-toggle {
+        display: none;
+    }
+    .cart-icon {
+        display: none;
+    }
+    .nav-link-cart {
+        display: block;
+    }
+}
